@@ -5,19 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NagaSyamala | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
-=======
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
->>>>>>> 4c773af (Made site responsive and added animations)
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
   <h2 class="logo">NagaSyamala</h2>
-  <nav>
+  <nav id="nav-links">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -25,144 +20,139 @@
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
+  <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>
 </header>
 
-<!-- HOME -->
-<section id="home" class="section hero">
-  <h1>Hi, I’m <span>NagaSyamala</span></h1>
-  <h3>Final Year B.Tech CSE (AI & ML)</h3>
-  <p>Aspiring Software Engineer | Web Developer | AI Enthusiast</p>
-
-  <div class="btn-group">
-    <a href="#projects" class="btn">View Projects</a>
-
-      <a href="Padigala NagaSyamala_Resume.pdf" target="_blank" class="btn outline">
-          View Resume
-        </a>
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <h1>Hi, I’m <span>NagaSyamala</span></h1>
+    <h3>Final Year B.Tech CSE (AI & ML)</h3>
+    <p>Aspiring Software Engineer | Web Developer | AI Enthusiast</p>
+    <div class="btn-group">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="Padigala NagaSyamala_Resume.pdf" target="_blank" class="btn outline">View Resume</a>
+    </div>
   </div>
 </section>
 
-
 <!-- ABOUT -->
 <section id="about" class="section">
-  <h2 class="title">About Me</h2>
+  <h2 class="section-title">About Me</h2>
   <div class="about-container">
     <img src="NagaSyamala.jpg" alt="Naga Syamala Profile">
-    <div>
-      <p>
-        I am a final-year B.Tech student in CSE (AI & ML) at Sai Spurthi Institute of Technology.
-        Passionate about software development, AI, and building real-world applications.
-      </p>
-      <p>
-        Currently learning full-stack development and working on AI-based projects like
-        <strong>Kisan Vaani</strong>.
-      </p>
+    <div class="about-text">
+      <p>I am a final-year B.Tech student in CSE (AI & ML) at Sai Spurthi Institute of Technology. Passionate about software development, AI, and building real-world applications.</p>
+      <p>Currently learning full-stack development and working on AI-based projects like <strong>Kisan Vaani</strong>.</p>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section light">
-  <h2 class="title">Skills</h2>
+  <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
-    <div class="card">Python</div>
-    <div class="card">Java</div>
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">Django</div>
-    <div class="card">Machine Learning</div>
-    <div class="card">NLP</div>
-    <div class="card">SQL</div>
-    <div class="card">DSA</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Java</div>
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">Django</div>
+    <div class="skill-card">Machine Learning</div>
+    <div class="skill-card">NLP</div>
+    <div class="skill-card">SQL</div>
+    <div class="skill-card">DSA</div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-  <h2 class="title">Projects</h2>
-  <div class="project-card">
-    <h3>Kisan Vaani (Ongoing)</h3>
-    <p>AI-powered farmer assistance app with market prices, crop advisory & voice support.</p>
-    <span>Python | Django | AI | NLP</span>
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Kisan Vaani (Ongoing)</h3>
+      <p>AI-powered farmer assistance app with market prices, crop advisory & voice support.</p>
+      <span>Python | Django | AI | NLP</span>
+    </div>
+    <div class="project-card">
+      <h3>Emotion & Stress Detection During Online Interviews</h3>
+      <p>Provides objective and unbiased candidate assessment.</p>
+      <span>DeepLearning | Python | Multimodal FeatureFusion</span>
+    </div>
+    <div class="project-card">
+      <h3>Fake Profile Identification</h3>
+      <p>ML & NLP based system to detect fake social media profiles.</p>
+      <span>Python | ML | NLP | Django</span>
+    </div>
+    <div class="project-card">
+      <h3>Rock Paper Scissors</h3>
+      <p>Console-based game using Python logic.</p>
+      <span>Python</span>
+    </div>
   </div>
-  <div class="project-card">
-   <h3>Emotion and Stress detection During Online Interviews Using Multi Model DeepLearning</h3>
-   <p>provide objective and unbiased candidate assessment</p>
-   <span>DeepLearning FrameWorks | Python | Multimodal FeatureFusion</span>
-  </div>
-
-  <div class="project-card">
-    <h3>Fake Profile Identification</h3>
-    <p>ML & NLP based system to detect fake social media profiles.</p>
-    <span>Python | ML | NLP | Django</span>
-  </div>
-
-  <div class="project-card">
-    <h3>Rock Paper Scissors</h3>
-    <p>Console-based game using Python logic.</p>
-    <span>Python</span>
-  </div>
-  
-
 </section>
-
 
 <!-- EDUCATION -->
 <section id="education" class="section light">
-  <h2 class="title">Education</h2>
-  <ul class="education-list">
-    <li>
+  <h2 class="section-title">Education</h2>
+  <div class="education-grid">
+    <div class="edu-card">
       <h3>B.Tech – CSE (AI & ML)</h3>
       <p>Sai Spurthi Institute of Technology (2022–2026)</p>
       <span>CGPA: 8.35</span>
-    </li>
-    <li>
+    </div>
+    <div class="edu-card">
       <h3>Intermediate</h3>
       <p>SJKM College (2020–2022)</p>
-      <span>Percentage:89%</span>
-    </li>
-    <li>
+      <span>Percentage: 89%</span>
+    </div>
+    <div class="edu-card">
       <h3>SSC</h3>
       <p>ZPHS Yerrupalem (2019–2020)</p>
       <span>CGPA: 10/10</span>
-    </li>
-  </ul>
-</section>
-<section id="certifications">
-  
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-  <h2 class="title">Contact Me</h2>
-
+  <h2 class="section-title">Contact Me</h2>
   <form class="contact-form">
     <input type="text" placeholder="Your Name" required>
     <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5"></textarea>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
     <button type="submit" class="btn">Send Message</button>
   </form>
-
   <div class="social-links">
-  <a href="mailto:nagasyamala39@gmail.com" aria-label="Email">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/padigala-naga-syamala-894925328" target="_blank" aria-label="LinkedIn">
-    <i class="fa-brands fa-linkedin-in"></i>
-  </a>
-
-  <a href="https://github.com/nagasyamala39" target="_blank" aria-label="GitHub">
-    <i class="fa-brands fa-github"></i>
-  </a>
-</div>
-
+    <a href="mailto:nagasyamala39@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/padigala-naga-syamala-894925328" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/nagasyamala39" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2026 NagaSyamala Padigala | Built with HTML & CSS
 </footer>
 
+<!-- SCRIPT -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      if(navLinks.classList.contains('open')) navLinks.classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>
