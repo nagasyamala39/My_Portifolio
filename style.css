@@ -21,10 +21,10 @@ body {
   height: 80px;
   background: #ffffff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+  padding: 0 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   z-index: 1000;
 }
 
@@ -301,55 +301,90 @@ footer {
 }
 
 /* ================= RESPONSIVE ================= */
+
+/* Tablets */
 @media (max-width: 1024px) {
   .hero-section h1 {
     font-size: 44px;
   }
+
   .section {
     padding: 120px 8%;
   }
 }
 
+/* Mobile & Tablets */
 @media (max-width: 768px) {
+
+  /* NAVBAR */
   .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
+    height: 70px;
+    padding: 0 20px;
+    flex-direction: row;
   }
 
+  /* Hamburger LEFT */
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: #2563eb;
+    cursor: pointer;
+  }
+
+  /* Logo CENTER */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+  }
+
+  /* Hide desktop nav */
   nav {
-    display: none;
-    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
     width: 100%;
-    text-align: center;
-    gap: 15px;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 25px 0;
+    display: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   }
 
+  nav a {
+    font-size: 18px;
+  }
+
+  /* Show menu when open */
   nav.open {
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
-
+  /* HERO */
   .hero-section h1 {
     font-size: 36px;
+    text-align: center;
   }
 
   .hero-section h3 {
     font-size: 22px;
+    text-align: center;
   }
 
   .hero-section p {
     font-size: 18px;
+    text-align: center;
   }
 
   .btn {
     display: block;
-    margin: 10px auto;
+    margin: 12px auto;
   }
 
+  /* ABOUT */
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -360,10 +395,12 @@ footer {
     margin-bottom: 20px;
   }
 
+  /* TITLES */
   .section-title {
     font-size: 34px;
   }
 
+  /* SOCIAL ICONS */
   .social-links a {
     width: 70px;
     height: 70px;
@@ -371,16 +408,25 @@ footer {
   }
 }
 
+/* Small Phones */
 @media (max-width: 480px) {
+
   .hero-section h1 {
     font-size: 30px;
   }
+
   .hero-section h3 {
     font-size: 20px;
   }
+
   .hero-section p {
     font-size: 16px;
   }
+
+  .logo {
+    font-size: 22px;
+  }
+
   footer {
     font-size: 14px;
   }

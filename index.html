@@ -11,7 +11,12 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
+  <div class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
   <h2 class="logo">NagaSyamala</h2>
+
   <nav id="nav-links">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -20,10 +25,16 @@
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
-  <div class="hamburger" id="hamburger">
-    <i class="fa-solid fa-bars"></i>
-  </div>
 </header>
+<!--script-->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+</script>
 
 <!-- HERO -->
 <section id="home" class="hero-section">
@@ -77,7 +88,7 @@
       <span>Python | Django | AI | NLP</span>
     </div>
     <div class="project-card">
-      <h3>Emotion & Stress Detection During Online Interviews</h3>
+      <h3>Emotion & Stress Detection During Online Interviews Using Multimodal DeepLearning</h3>
       <p>Provides objective and unbiased candidate assessment.</p>
       <span>DeepLearning | Python | Multimodal FeatureFusion</span>
     </div>
